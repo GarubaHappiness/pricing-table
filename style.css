@@ -1,0 +1,194 @@
+
+.pricing{
+	background: #fff;
+	background-size: cover;
+	background-attachment: fixed;
+	margin-top: 0vh;
+    margin-bottom: 8rem;
+}
+
+.pricing-head{
+	text-align: center;
+	font-size: 35px;
+	padding-bottom: 10vh;
+}
+
+.pricing p{
+	text-align: center;
+	margin-top: -2vh;
+	font-size: 17px;
+	padding-bottom: 10px;
+}
+
+.pricing-table{
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	/* text-align: center; */
+	flex-wrap: wrap;
+}
+
+.col{
+	flex: 25%;
+	padding: 10px;
+    border-radius: 10px;
+	max-width: 320px;
+	box-sizing: border-box;
+	transition: .5s all;
+}
+
+.table{
+	background: #fff;
+	padding: 40px 20px;
+    border-radius: 10px;
+	font-family: sans-serif;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 0 10px #00000070;
+}
+
+.table h2{
+	text-transform: uppercase;
+}
+
+.table ul{
+	margin: 0;
+	padding: 0;
+}
+
+.table ul li{
+	padding: 5px 0;
+	font-size: 16px;
+	list-style: none;
+}
+
+.price{
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.price h4{
+    font-size: 18px;
+}
+
+.price p{
+    text-align: left;
+    font-size: 15px;
+}
+
+.price span{
+	display: block;
+	font-size: 19px;
+}
+
+.pricing-description span{
+    font-size: 15px !important;
+}
+
+.price-description{
+    display: inline !important;
+}
+
+.price-description-sec{
+    padding-left: 78px;
+}
+
+.table a{
+	text-decoration: none;
+	color: #2c3e50;
+	border: 1px solid black;
+	display: block;
+    text-align: center;
+	padding: 15px 0;
+	margin: 10px 0;
+	border-radius: 40px;
+	font-size: 16px;
+	transition: 0.5s linear;
+}
+
+.table a:hover{
+	color: #000;
+}
+
+.second .table{
+    background-color: rgb(255, 238, 192);
+}
+
+.second .table a{
+    background-color: #fff;
+}
+
+.third .table{
+    background-color: rgb(188, 236, 255);
+}
+
+.third .table a{
+    background: rgb(0, 102, 255);
+    border: none;
+    color: #fff;
+}
+
+.last .table{
+    background-color: rgb(43, 42, 42);
+    color: #fff;
+}
+
+.last .table a{
+    background: #fff;
+    border: none;
+    color: #000;
+}
+
+.pop{
+	background: rgb(0, 102, 255);
+	color: #fff;
+	transform: rotate(45deg);
+	padding: 10px 40px;
+	position: absolute;
+	font-size: 15px;
+	top: 16px;
+	right: -40px;
+}
+
+col{
+	margin: 2rem;
+	transition: transform(0);
+}
+
+
+@keyframes fadeIn{
+	from{
+		opacity: 0
+		}
+	to{
+		opacity: 1
+		}
+}
+.col:nth-child(1){
+	animation: fadeIn .5s .5s backwards;
+}
+.col:nth-child(2){
+	animation: fadeIn .5s 1s backwards;
+}
+.col:nth-child(3){
+	animation: fadeIn .5s 1.5s backwards;
+}
+
+.col:hover{
+	transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 900px){
+	.col{
+		flex: 50%;
+	}
+}
+
+
+@media screen and (max-width: 700px){
+	.col{
+		flex: 100%;
+	}
+}
